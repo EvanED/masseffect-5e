@@ -7,3 +7,5 @@ phb-app/.tmp/
 phb-app/npm-debug.log
 phb-app/coverage/
 .tmp
+\#*
+.#*
