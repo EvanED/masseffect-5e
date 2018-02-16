@@ -1,7 +1,7 @@
 <template lang="pug">
   v-expansion-panel(popout,expand).mb-2
     v-expansion-panel-content(
-      v-for="spell in spells"
+      v-for="spell in sorted_spells(spells)"
       v-bind:spell="spell"
       v-bind:key="spell.id"
       hide-actions)
@@ -39,6 +39,30 @@
     },
     name: 'SpellList',
     props: ['spells'],
+    methods: {
+      sorted_spells: function(spells) {
+        spells = spells.slice();
+	spells.sort(function(a, b) {
+	  if (a.type < b.type)
+	    return -1;
+	  if (a.type > b.type)
+	    return 1;
+
+	  if (a.level < b.level)
+	    return -1
+	  if (a.level > b.level)
+	    return 1;
+
+          if (a.name < b.name)
+	    return -1
+	  if (a.name > b.name)
+	    return 1;
+
+          return 0;
+	});
+        return spells;
+      }
+    },
   };
 </script>
 
