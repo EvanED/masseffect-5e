@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-expansion-panel(popout).mb-2
+  v-expansion-panel(popout,expand).mb-2
     v-expansion-panel-content(
       v-for="spell in spells"
       v-bind:spell="spell"

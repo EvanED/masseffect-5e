@@ -8,7 +8,7 @@
     p.
       The following feats from the PHB are not available: {{ not_available }}
     div.mt-3
-      v-expansion-panel(popout).mb-2
+      v-expansion-panel(popout,expand).mb-2
         v-expansion-panel-content(
         v-for="feat in feats"
         v-bind:feat="feat"
