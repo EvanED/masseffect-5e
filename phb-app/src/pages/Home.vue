@@ -3,7 +3,7 @@
     v-layout(row justify-space-around)
       v-flex.xs12
         img(:src="`../assets/images/me5e_logo_notm.png`" alt="mass effect 5e logo")
-        p.subtitle Player's Handbook
+        p.subtitle Player's Handbook [Mod]
         div.ma-5.text-xs-center
           v-btn(href="https://queryluke.github.io/masseffect-5e/") About, News, & Printables
           v-btn(href="https://github.com/queryluke/masseffect-5e/blob/master/CHANGELOG.md") Changelog

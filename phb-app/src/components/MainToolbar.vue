@@ -4,7 +4,7 @@
     v-toolbar-title
       router-link(to="/").nav-brand
         img(:src="`../assets/images/me5e.svg`")
-        span Mass Effect 5e - Player's Handbook
+        span Mass Effect 5e - Player's Handbook [Mod]
     v-spacer
     v-toolbar-items.hidden-sm-and-down
       v-btn(href="/masseffect-5e/about/" flat) About

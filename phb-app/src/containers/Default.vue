@@ -4,7 +4,7 @@
     main-toolbar
     v-content
       v-container(fluid fill-height).blue-grey.lighten-4
-        h1.sr-only Mass Effect 5e - Player's Handbook
+        h1.sr-only Mass Effect 5e - Player's Handbook [Mod]
         transition(name="slide" mode="out-in")
           router-view(:key="$route.fullPath")
 </template>
