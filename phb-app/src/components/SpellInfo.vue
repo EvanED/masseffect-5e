@@ -33,6 +33,13 @@
         label Effect
         ul
           li(v-for="effect in spell.effect" v-bind:key="effect") {{ effect }}
+      v-flex.xs12.sm4.md3.attribute.mb-2
+        label Combo
+        div
+          <span v-if="spell.primes && spell.detonates">Primes and Detonates</span>
+          <span v-if="!spell.primes && spell.detonates">Detonates</span>
+          <span v-if="spell.primes && !spell.detonates">Primes</span>
+          <span v-if="!spell.primes && !spell.detonates">None</span>
     div.hr
     div.mt-3
       me-element(:text="spell.mechanic")
